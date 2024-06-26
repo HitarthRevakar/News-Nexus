@@ -1,0 +1,213 @@
+<%- include("partials/header.ejs") %> 
+
+<section id="navbar-menu" class="sticky-top">
+    <nav class="navbar navbar-expand-lg  shadow  rounded-0">
+      <div class="container-fluid  ">
+        <a class="navbar-brand mx-3" href="/">
+          <img src="/img//flat-newspaper-news-round-icon.png" width="100%" height="40px">
+        </a>
+  
+        <div class="mt-lg-none mt-md-none   mt-1">
+          <h2 class="news1 fw-bold ">News&nbsp;Nexus</h2>
+        </div>
+        
+        <!--- Dark Mode -->
+        <div class="d-lg-inline d-md-none d-sm-inline">
+          <button id="theme-toggle" class="light-mode  mx-lg-4 mx-md-2 p-0 ">
+            <!-- <i class="fa fa-sun animate__bounceIn "></i>  -->
+            <i class='bx bxs-sun bx-rotate-90 bx-tada' style='color:rgba(253, 234, 91, 0.959)'   ></i>
+            <!-- <i class="fa fa-moon  animate__bounceIn"></i>  -->
+            <i class='bx bxs-moon bx-tada' style='color:rgba(67,98,217,0.93)' ></i>
+          </button>
+        </div>
+  
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span>--->
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+  
+         <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ">
+            <li class="nav-item mx-lg-1 ">
+              <a class="nav-link" href="/"><span class="underline">Home</span> </a>
+            </li>
+            <li class="nav-item mx-lg-1">
+              <a class="nav-link" href="/news/sports"><span class="underline">Sports</span> </a>
+            </li>
+            <li class="nav-item mx-lg-1">
+              <a class="nav-link" href="/news/science"><span class="underline">Science</span> </a>
+            </li>
+            <li class="nav-item mx-lg-1">
+              <a class="nav-link" href="/news/technology"><span class="underline">Tech</span></a>
+            </li>
+            <li class="nav-item mx-lg-1">
+              <a class="nav-link" href="/weather"><span class="underline">Weather</span></a>
+            </li>
+          </ul> 
+  
+          <div class="d-flex justify-content-lg-center me-lg-3 logout-btn">
+  
+              <div class="dropdown ">
+              <button class="btn bg-primary-subtle text-dark rounded-4 border-dark dropdown-shadow " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <strong><i class="bi bi-person-fill"></i>&nbsp;</strong> <!---< = user.email >-->
+              &nbsp;&nbsp; <i class="bi bi-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end me-3 rounded-bottom-3 rounded-top-0 mt-2 text-center z-n1 position-absolute  border-dark bg-primary-subtle ">
+                <li><a class="dropdown-item my-2" href="/tvchannel">TV Channels</a></li>
+                <li><a class="dropdown-item my-2 " href="/aboutus">About Us</a></li>
+                <!-- <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item rounded-0  justify-content-center " href="\logout"><i class="bi bi-box-arrow-in-left">&nbsp;&nbsp;&nbsp;</i>Logout</a></li> -->
+              </ul>
+            </div>
+          </div> 
+              
+        </div>  
+      </div>
+      
+    </nav>
+</section>
+
+<section id="tvchannel" class="my-5">
+    <div class="container">
+        <div class="row">
+          <h1 class="text-center my-3 text-decoration-underline">News TV Channel's</h1>
+            <div class="col-lg-6 col-md-12 my-3 d-flex justify-content-center px-3">
+                <div class="card rounded-4 border-0 ">
+                    <div class="card-header text-center text-dark ">
+                        <h4 class="">TV9 Gujarati</h4>
+                      </div>
+                    <div class="card-body ">
+                        <iframe class="img-fluid" src="https://www.youtube.com/embed/Imhv_BvPoaA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 my-3 d-flex justify-content-center px-3">
+                <div class="card rounded-4 border-0 ">
+                    <div class="card-header text-center text-dark">
+                        <h4>Sandesh News</h4>
+                      </div>
+                    <div class="card-body ">
+                      <iframe class="img-fluid" src="https://www.youtube.com/embed/--wNQSqpMjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 my-3 d-flex justify-content-center px-3">
+                <div class="card rounded-4 border-0 ">
+                    <div class="card-header text-center text-dark">
+                        <h4>ABP News</h4>
+                      </div>
+                    <div class="card-body ">
+                      <iframe class="img-fluid" src="https://www.youtube.com/embed/nyd-xznCpJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 my-3 d-flex justify-content-center px-3">
+                <div class="card rounded-4 border-0 ">
+                    <div class="card-header text-center text-dark">
+                        <h4>DD News</h4>
+                      </div>
+                    <div class="card-body ">
+                        <iframe class="img-fluid" src="https://www.youtube.com/embed/e3UbRxShWj0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 my-3 d-flex justify-content-center px-3">
+                <div class="card rounded-4 border-0 ">
+                    <div class="card-header text-center text-dark">
+                        <h4>Zee News</h4>
+                      </div>
+                    <div class="card-body ">
+                      <iframe class="img-fluid" src="https://www.youtube.com/embed/lexuI9ZGASA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 my-3 d-flex justify-content-center px-3">
+                <div class="card rounded-4 border-0 ">
+                    <div class="card-header text-center text-dark">
+                        <h4>Aaj Tak</h4>
+                      </div>
+                    <div class="card-body ">
+                      <iframe class="img-fluid" src="https://www.youtube.com/embed/Nq2wYlWFucg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 my-3 d-flex justify-content-center px-3">
+              <div class="card rounded-4 border-0 ">
+                  <div class="card-header text-center text-dark">
+                      <h4>IndiaTV News</h4>
+                    </div>
+                  <div class="card-body ">
+                    <iframe class="img-fluid" src="https://www.youtube.com/embed/lejRCiPFTBE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-12 my-3 d-flex justify-content-center px-3">
+            <div class="card rounded-4 border-0 ">
+                <div class="card-header text-center text-dark">
+                    <h4>News 24</h4>
+                  </div>
+                <div class="card-body ">
+                  <iframe class="img-fluid" src="https://www.youtube.com/embed/mId-etAVRLs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer" class="  border-top border-2 border-dark">
+  <div class="container">
+    <div class="footer-content row d-flex py-5 px-3">
+      <div class="col-xl-4 col-lg-4 col-md-6 col-12  px-xl-5 px-lg-5 pe-md-5 footer-title">
+        <h3 class="my-4 fw-bold">News Nexus</h3>
+        <h4>
+          Stay Curious, <br> Stay Engaged - Explore the World through our News
+        </h4>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-12 px-xl-4 footer-title">
+      <div class="mx-xl-5 mx-lg-5 px-xl-3 px-lg-3">
+        <h3 class="my-4  fw-bold">Category</h3>
+          <div class="category ">
+            <li class="mb-2"><a href="/news/business" class="text-decoration-none ">Business</a></li>
+            <li class="mb-2"><a href="/news/entertainment" class="text-decoration-none">Entertainment</a></li>
+            <li class="mb-2"><a href="/news/technology" class="text-decoration-none">Technology</a></li>
+            <li class="mb-2"><a href="/news/sports" class="text-decoration-none">Sports</a></li>
+            <li class="mb-2"><a href="/news/science" class="text-decoration-none">Science</a></li>
+          </div>
+      </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-12 col-12  px-xl-5 px-lg-5 pe-md-5 footer-title">
+        <h3 class="my-4  fw-bold">Contacts</h3>
+        <div class="d-flex address ">
+          <i class="bi bi-geo-alt-fill me-3 "></i>
+          <p>New Delhi, ND20015, Ring Road</p>
+        </div>
+        <div class="d-flex address ">
+          <i class="bi bi-envelope-fill me-3"></i>
+          <p>info@example.com</p>
+        </div>
+        <div class="d-flex address">
+          <i class="bi bi-telephone-fill me-3"></i>
+          <p>+ 91 234 567 88</p>
+        </div>
+        <div>
+          <p class="text-decoration-underline">Join Our Social Network's!</p>
+          <div class="social-icon">
+            <a href="" class="p-2 my-2 rounded-2 facebook-ion"><i class="bi bi-facebook p-xl-2 p-lg-none p-2"></i></a> 
+            <a href="" class="p-2 my-2 rounded-2 instagram-ion"><i class="bi bi-instagram p-xl-2 p-lg-none p-2 "></i></a>
+            <a href="" class="p-2 my-2 rounded-2 youtube-ion"><i class="bi bi-youtube p-xl-2 p-lg-none p-2 "></i></a>
+            <a href="" class="p-2 my-2 rounded-2 linkedin-ion"><i class="bi bi-linkedin p-xl-2 p-lg-none p-2 "></i></a>              
+          </div>
+
+        
+        </div>
+  </div>
+</section>
+
+
+
+<%- include("partials/footer.ejs") %> 
